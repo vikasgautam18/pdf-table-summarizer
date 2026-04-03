@@ -1,0 +1,10 @@
+azure-functions
+azure-identity
+azure-ai-documentintelligence>=1.0.0
+azure-storage-blob
+azure-storage-queue
+openai>=1.0.0
+requests
+deltalake>=0.18.0
+pyarrow>=14.0.0
+pandas>=2.0.0

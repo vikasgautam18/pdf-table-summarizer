@@ -1,0 +1,22 @@
+# Copy this file to terraform.tfvars and fill in your values.
+# terraform.tfvars is gitignored and will not be committed.
+#
+# Usage:
+#   cp terraform.tfvars.example terraform.tfvars
+#   # Edit terraform.tfvars with your values
+#   terraform apply
+
+# --- Required (replace with your Azure identifiers) ---
+subscription_id      = "<your-azure-subscription-id>"
+graph_tenant_id      = "<your-entra-tenant-id>"
+graph_client_id      = "<your-app-client-id>"
+graph_client_secret  = "<your-app-client-secret>"
+sharepoint_site_id   = "<your-sharepoint-site-id>"
+
+# --- Required (recommended values shown - adjust as needed) ---
+location             = "southindia"
+project_name         = "pdftblsum"
+delta_container_name = "delta-tables"
+enable_blob_output   = false
+webhook_client_state = "pdf-table-summarizer"
+max_pdf_size_mb      = 100
